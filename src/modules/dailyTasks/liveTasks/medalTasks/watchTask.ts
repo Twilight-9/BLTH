@@ -377,6 +377,7 @@ class WatchTask extends MedalModule {
             this.logger.error(
               `粉丝勋章【${medal_name}】 无法获取主播【${nick_name}】（UID：${uid}，直播间：${roomid}）的粉丝团升级任务信息，跳过观看直播任务`,
             )
+            allCompleted = false
             continue
           }
 
